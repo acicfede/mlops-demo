@@ -33,4 +33,17 @@ spec:
     tolerations:
       - effect: NoSchedule
         key: nvidia.com/gpu
-        value: NVIDIA-A10G-SHARED
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: llama32-1b-route
+  namespace: ml
+spec:
+  to:
+    kind: Service
+    name: llama32-1b-predictor-default
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
