@@ -11,6 +11,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
+  storageClassName: lvms-vg1
 ---
 apiVersion: kubeflow.org/v1
 kind: Notebook
