@@ -11,7 +11,6 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  storageClassName: nfs-csi
 ---
 apiVersion: kubeflow.org/v1
 kind: Notebook
