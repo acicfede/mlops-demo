@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   name: grafana
 spec:
-  channel: patch-me-see-overlays-dir
+  channel: v5
   installPlanApproval: Automatic
   name: grafana-operator
   source: community-operators
